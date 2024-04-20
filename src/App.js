@@ -1,38 +1,9 @@
+import HomeCategories from './components/Home/home-categories-component';
+
+import './Categories.styles.scss';
+
 const App = () => {
-	return (
-		<div className='categories-container'>
-			<div className='category-container'>
-				<div className='category-body-container'>
-					<h2>Hats</h2>
-					<p>Shop Now</p>
-				</div>
-			</div>
-			<div className='category-container'>
-				<div className='category-body-container'>
-					<h2>Jackets</h2>
-					<p>Shop Now</p>
-				</div>
-			</div>
-			<div className='category-container'>
-				<div className='category-body-container'>
-					<h2>Sneakers</h2>
-					<p>Shop Now</p>
-				</div>
-			</div>
-			<div className='category-container'>
-				<div className='category-body-container'>
-					<h2>Women</h2>
-					<p>Shop Now</p>
-				</div>
-			</div>
-			<div className='category-container'>
-				<div className='category-body-container'>
-					<h2>Men</h2>
-					<p>Shop Now</p>
-				</div>
-			</div>
-		</div>
-	);
+	return <HomeCategories />;
 };
 
 export default App;
