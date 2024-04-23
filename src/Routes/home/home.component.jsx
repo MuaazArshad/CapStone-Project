@@ -1,7 +1,6 @@
-import CategoryItem from '../category-item/category-item.component';
-import './home-categories.styles.scss';
+import Directory from '../../components/directory/directory.component';
 
-const HomeCategories = () => {
+const Home = () => {
 	const categories = [
 		{ id: 1, title: 'Hats', imageUrl: 'https://i.ibb.co/cvpntL1/hats.png' },
 		{
@@ -17,14 +16,7 @@ const HomeCategories = () => {
 		{ id: 4, title: 'Women', imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png' },
 		{ id: 5, title: 'Men', imageUrl: 'https://i.ibb.co/R70vBrQ/men.png' },
 	];
-	return (
-		<div className='categories-container'>
-			{categories.map((category) => (
-				//<CategoryItem key={category.id} category={category} />
-
-				<CategoryItem key={category.id} category={category} />
-			))}
-		</div>
-	);
+	return <Directory categories={categories} />;
 };
-export default HomeCategories;
+
+export default Home;
